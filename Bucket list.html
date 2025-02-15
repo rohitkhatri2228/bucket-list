@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List</title>
+    <link rel="stylesheet" href="Bucket list.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Bucket List</h1>
+    </header>
+    <main>
+        <ul id="bucket-list">
+            <li onclick="removeItem(this)">
+              <a href="#">
+                <span>Going to Ujjain</span>
+                <span class="icon">&#x2714;</span>
+              </a>
+              <button onclick="removeItem(this.parentElement)">Remove</button>
+            </li>
+            <li onclick="removeItem(this)">
+              <a href="#">
+                <span>Going to Prayagraj</span>
+                <span class="icon">&#x2605;</span>
+              </a>
+              <button onclick="removeItem(this.parentElement)">Remove</button>
+            </li>
+            <li onclick="removeItem(this)">
+              <a href="#">
+                <span>Going to Khatu</span>
+                <span class="icon">&#x2605;</span>
+              </a>
+              <button onclick="removeItem(this.parentElement)">Remove</button>
+            </li>
+          </ul>
+          
+        <div id="add-item">
+            <input type="text" id="new-item" placeholder="Add new item...">
+            <button onclick="addItem()">Add</button>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; My Personal Bucket List</p>
+    </footer>
+
+    <script>
+        function removeItem(item) {
+            item.parentNode.removeChild(item);
+        }
+    
+        function addItem() {
+            var newItem = document.getElementById("new-item").value;
+            if (newItem) {
+                var li = document.createElement("li");
+                li.setAttribute("onclick", "removeItem(this)");
+                li.innerHTML = `<a href="#"><span>${newItem}</span><span class="icon">&#x2605;</span></a>`;
+                document.getElementById("bucket-list").appendChild(li);
+                document.getElementById("new-item").value = ""; // Clear the input field
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>
