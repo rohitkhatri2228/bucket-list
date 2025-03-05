@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 1374px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    padding: 10px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #ccc;
+}
+
+.product{
+    height: 550px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-image{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#main-image{
+    height: 330px;
+    width: 450px;
+}
+
+.image-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.image-gallery img{
+    height: 100px;
+    cursor: pointer;
+}
+
+.image-gallery img:hover{
+    scale: 1.05;
+}
+
+.product-info{
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.releted-product{
+    height: 400px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-grid{
+    height: 350px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.product-item{
+    height: 330px;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-item:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    scale: 1.05;
+}
+
+.product-item img{
+    height: 150px;
+}
+
+p a{
+    color: #333;
+    text-decoration: none;
+}
+
+p a:hover{
+    color: #0044ff;
+}
+
+.price{
+    color: green;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+button{
+    width: 150px;
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover{
+    background-color: #ff9c6e;
+    scale: 1.05;
+}
+
+footer{
+    width: 1374px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
